@@ -66,11 +66,14 @@ function setupAudio(num) {
         oscillator.frequency.value = freqValue;
         oscillator.start();
         return function turnOff() {
-            if (oscillator) {
+//            if (oscillator) {
+//            oscillator.stop();
+//            oscillator.disconnect();
+//            context.close().catch(function() {});
+//            }
             oscillator.stop();
             oscillator.disconnect();
-            context.close().catch(function() {});
-            }
+            context.close();
         };
     } else {
         alert('Audio Not Supported In Current Browser');
@@ -246,8 +249,6 @@ function enableButtons() {
 }
 
 document.getElementById("startButton").addEventListener("click", startGame);
-
-
 
 var footerDate = (function() {
     var today = new Date(),
