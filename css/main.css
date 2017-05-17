@@ -5,22 +5,27 @@
 header, footer {
     text-align: center;
 }
-
-footer {
-    margin-top: 100px;
+header {
+    position: relative;
+    top: 50px;
+    color: yellow;
+    text-shadow: 2px 2px 7px #000;
+    font-size: 25px;
 }
-
-
+footer {
+    margin-top: 70px;
+}
+body {
+    background: url('../toys.png') no-repeat left top;
+    background-size: cover;
+}
 .simon {
     margin: 45px auto 0;
     width: 475px;
     height: 475px;
     background: #191919;
     position: relative;
-/*
-    top: 50px;
-    left: 200px;
-*/
+    top: 30px;
     border-radius: 50%;
     box-shadow: 8px 10px 15px #888888;
 }
